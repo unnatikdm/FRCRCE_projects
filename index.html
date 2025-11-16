@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control - Premium Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Updated header with new logo structure and stats -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏠</div>
+                    <h1>SmartHome Pro</h1>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-card">
+                        <span class="stat-label">Devices Online</span>
+                        <span class="stat-value" id="deviceCount">6</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Energy Usage</span>
+                        <span class="stat-value">2.4 kW</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Updated filter buttons with new room structure -->
+        <div class="filters">
+            <button class="filter-btn active" data-room="all">All Rooms</button>
+            <button class="filter-btn" data-room="living">Living Room</button>
+            <button class="filter-btn" data-room="bedroom">Bedroom</button>
+            <button class="filter-btn" data-room="kitchen">Kitchen</button>
+        </div>
+
+        <!-- Devices Grid -->
+        <div class="devices-grid" id="devicesGrid">
+            <!-- Device cards will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
